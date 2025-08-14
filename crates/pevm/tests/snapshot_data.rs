@@ -1,10 +1,10 @@
 //! Test if snapshotted mainnet data is correct
 
+use std::{collections::BTreeMap, fs::File};
+
 use alloy_primitives::B256;
 use alloy_provider::{Provider, ProviderBuilder};
 use alloy_rpc_types_eth::{BlockNumberOrTag, BlockTransactionsKind};
-use std::collections::BTreeMap;
-use std::fs::File;
 
 #[tokio::test]
 async fn snapshotted_mainnet_block_hashes() {
