@@ -71,6 +71,7 @@ serde_json.workspace = true
 walkdir.workspace = true
 secp256k1 = { version = "0.28", features = ["recovery"] }
 ed25519-dalek = "2"
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
 
 [lints]
 workspace = true
